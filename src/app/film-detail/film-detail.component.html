@@ -1,0 +1,13 @@
+<div class="film-details" *ngIf="film">
+    <h1 >Détails</h1>
+    <div class="flex">
+    <img [src]="film.img" alt="{{ film.nom }}" class="film-image">
+    <p>{{film.description}}</p>
+</div>
+    <a (click)="goToListFilms()" class="back-link">Retour</a>
+  </div>
+  
+  <div class="no-film" *ngIf="!film">
+    <h3>Ce film n'existe pas</h3>
+  </div>
+  
