@@ -3,13 +3,24 @@
     overflow: hidden;
     border: 1px solid #ddd;
     border-radius: 8px;
+    margin-right: 40px;
     margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
   }
+  .back-link {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #ff5e00;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-top: 10px;
+  }
   img{
-    height:450px;
-    width:300px;
+    height:300px;
+    width:202px;
   }
   
   .film-container:hover {

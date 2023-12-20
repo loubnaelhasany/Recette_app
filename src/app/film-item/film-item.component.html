@@ -1,11 +1,9 @@
 <div class="film-container">
-      <img [src]="film.img" alt="{{ film.nom }}" class="film-image">
-      <div class="film-overlay">
-        <h3>{{ film.nom }}</h3>
-        
-        <a (click)="goToDetail(film)" >
-        Détail
-      </a>
-    
-    </div>
+  <div (click)="goToDetail(film)"  class="film-container">
+    <img [src]="film.getPoster_Path()" alt="{{ film.getTitle() }}" class="film-image">
+    <div class="film-overlay">
+      <p>{{ film.getTitle() }}</p>
+      
+  
+  </div>
 </div>
