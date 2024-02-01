@@ -1,8 +1,0 @@
-<div>
-    <h3>Commentaires</h3>
-    <div *ngFor="let comment of comments">
-      {{ comment.author }}: {{ comment.text }}
-    </div>
-    <textarea [(ngModel)]="newComment.text" placeholder="Ajouter un commentaire"></textarea>
-    <button (click)="addComment()">Ajouter</button>
-  </div>

@@ -1,0 +1,86 @@
+/* styles.css */
+nav {
+    background-color: #ff771d; /* Couleur de fond de la barre de navigation */
+    padding: 10px; /* Espacement intérieur */
+  }
+  .nav-wrapper a {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 16px; /* Augmenter la taille du lien */
+    cursor: pointer;
+    margin-right: 100px;
+    font-weight: bold; /* Rendre le texte en gras */
+    text-decoration: underline; /* Souligner le texte */
+  }
+ 
+  
+  .nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Styles pour le texte dans la barre de navigation */
+  h6 {
+    margin: 0; /* Supprime la marge par défaut du h6 */
+    color: #fff; /* Couleur du texte */
+  }
+  
+  /* Styles pour le bouton "Se connecter" */
+  button {
+    background-color: #ffffff; /* Couleur de fond du bouton */
+    color: #ff771d; /* Couleur du texte du bouton */
+    padding: 8px 12px; /* Espacement intérieur du bouton */
+    border: none; /* Supprime la bordure du bouton */
+    border-radius: 10px;
+    cursor: pointer; /* Change le curseur lors du survol du bouton */
+  }
+  
+  /* Styles pour le logo au centre */
+  .brand-logo {
+    color: #fff; /* Couleur du texte du logo */
+    font-size: 1.5em; /* Taille de police du logo */
+    text-decoration: none; /* Supprime la décoration du texte (soulignement) */
+  }
+  
+  /* Styles pour le bouton "Logout" */
+  button.logout-btn {
+    background-color: #ff771d; /* Couleur de fond du bouton Logout */
+    color: #fff; /* Couleur du texte du bouton Logout */
+    padding: 8px 12px; /* Espacement intérieur du bouton Logout */
+    border: none; /* Supprime la bordure du bouton Logout */
+    cursor: pointer; /* Change le curseur lors du survol du bouton Logout */
+  }
+.Recette-container {
+    display: flex;
+    flex-wrap: nowrap; /* Ne pas passer à la ligne suivante, afficher en ligne */
+    justify-content: space-around;
+    overflow-x: auto; /* Activer la barre de défilement horizontale si nécessaire */
+  }
+  
+  .Recette-card {
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 200px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .Recette-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .Recette-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    border-radius: 8px;
+  }
+  
+  .Recette-overlay {
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  
+  

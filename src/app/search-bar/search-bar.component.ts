@@ -2,7 +2,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { MovieService } from '../film.service';
+import { RecetteService } from '../recette.service';
 
 @Component({
   selector: 'app-search-bar',
@@ -10,7 +10,7 @@ import { MovieService } from '../film.service';
   imports: [CommonModule,FormsModule,HttpClientModule],
   templateUrl: './search-bar.component.html',
   styleUrl: './search-bar.component.css',
-  providers:[HttpClientModule,MovieService]
+  providers:[HttpClientModule,RecetteService]
 })
 export class SearchBarComponent {
   @Output() search = new EventEmitter<string>();

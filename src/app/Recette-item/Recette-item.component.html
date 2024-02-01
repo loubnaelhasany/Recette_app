@@ -1,0 +1,8 @@
+<div class="Recette-container">
+  <div (click)="goToDetail(recette)"  class="Recette-container">
+    <img [src]="baseUri+recette.image" alt="{{ recette.title}}" class="Recette-image">
+    <div class="Recette-overlay">
+      <p >{{ recette.title}}</p> 
+  
+  </div>
+</div>

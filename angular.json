@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "movies-list": {
+    "Recettes-list": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:class": {
@@ -38,7 +38,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/movies-list",
+            "outputPath": "frontend3/angular",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -87,10 +87,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "movies-list:build:production"
+              "buildTarget": "Recettes-list:build:production"
             },
             "development": {
-              "buildTarget": "movies-list:build:development"
+              "buildTarget": "Recettes-list:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -98,7 +98,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "movies-list:build"
+            "buildTarget": "Recettes-list:build"
           }
         },
         "test": {

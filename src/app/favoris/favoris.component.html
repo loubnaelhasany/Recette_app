@@ -1,0 +1,23 @@
+
+<nav>
+    <div class="nav-wrapper ">
+        <h6 *ngIf="afficher" style="font-weight: bold;" >Bienvenue  {{nom +' '+ prenom}}</h6>
+        <a href="#" class="brand-logo center">
+          ChefEnPoche
+        </a>
+       <button *ngIf="afficher" (click)="this.service2.logOut()">Logout</button>
+    </div>
+  </nav>
+<div style="display: flex; flex-wrap: wrap; margin-right:0px;">
+@for ( recette of recettes; track $index) {
+<div  class="Recette-container" (click)="goToDetail(recette)">
+    <div class="Recette-card">
+      <img [src]="recette.image" alt="{{ recette.title }}" class="Recette-image">
+      <div class="Recette-overlay">
+        <p>{{recette.title }}</p>
+      </div>
+    </div>
+</div>
+<button (click)="supprimer(recette.id)">Supprimer</button>
+}
+</div>

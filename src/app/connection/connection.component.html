@@ -1,0 +1,18 @@
+
+<nav>
+    <div class="nav-wrapper " style="background-color: #ff771d;">
+        <a href="#" class="brand-logo center">
+          ChefEnPoche
+        </a> 
+    </div>
+  </nav>
+<form (ngSubmit)="onSubmit()" style="margin-top: 40px;">
+    <a href="#" style="color: #ff771d; font-size: 25px;">retour</a>
+    <label for="email">Email :</label>
+    <input [(ngModel)]="email"  type="email" id="email" name="email" ngModel required>
+    <label for="motDePasse">Mot de passe :</label>
+    <input  [(ngModel)]="motDePasse"  type="password" id="motDePasse" name="motDePasse" ngModel required>
+    <button type="submit">Se connecter</button><br>
+    Vous n'avez pas un Compte? creé on un   <a (click)="inscription()" style="color: #ff771d;">S'inscrire</a>
+  </form>
+  

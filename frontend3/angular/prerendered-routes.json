@@ -1,0 +1,8 @@
+{
+  "routes": [
+    "/favoris",
+    "/Recettes",
+    "/forms",
+    "/inscription"
+  ]
+}

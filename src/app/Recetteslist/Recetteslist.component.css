@@ -1,0 +1,67 @@
+/* Styles pour la barre de navigation */
+nav {
+  background-color: #ff771d;
+  padding: 10px;
+}
+
+/* Styles pour le conteneur principal de la barre de navigation */
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styles pour la partie gauche de la barre de navigation */
+.left-content {
+  display: flex;
+  align-items: center;
+}
+
+/* Styles pour la partie droite de la barre de navigation */
+.right-content {
+  display: flex;
+  align-items: center;
+}
+
+/* Styles pour le texte "Bienvenue" */
+h6 {
+  margin: 0;
+  color: #fff;
+}
+
+/* Styles pour le bouton "Se connecter" */
+button {
+  background-color: #ffffff;
+  color: #ff771d;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Styles pour le logo au centre */
+.brand-logo {
+  color: #fff;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+/* Styles pour le lien "Mes Favoris" */
+.nav-wrapper a {
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 16px; /* Augmenter la taille du lien */
+  cursor: pointer;
+  margin-right: 100px;
+  font-weight: bold; /* Rendre le texte en gras */
+  text-decoration: underline; /* Souligner le texte */
+}
+
+/* Styles pour le bouton "Logout" */
+button.logout-btn {
+  background-color: #ff771d;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+}

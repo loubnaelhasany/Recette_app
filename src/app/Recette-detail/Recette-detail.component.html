@@ -1,0 +1,62 @@
+<nav>
+  <div class="nav-wrapper">
+    <div class="left-content">
+      <h6 *ngIf="afficher" style="font-weight: bold; ">Bienvenue   {{nom +' '+ prenom}}</h6>
+      <button *ngIf="!afficher" (click)="inscrire()" type="button"> Se connecter</button>
+    </div>
+    <a href="#" class="brand-logo center">ChefEnPoche</a>
+    <div class="right-content">
+      <a *ngIf="afficher" (click)="goFavoris()">Mes Favoris</a>
+      <button *ngIf="afficher" (click)="this.service2.logOut()">Logout</button>
+    </div>
+  </div>
+</nav>
+
+
+<div class="Recette-details" *ngIf="recette">
+  <h4 style="color:#ff771d;" >{{recette.gtitle}}</h4>
+  <h4 style="color:#ff771d ;">{{ recette.title }}</h4>
+  <img [src]="recette.image" alt="{{ recette.title}}" class="Recette-image" >
+  <div class="donn">
+    <h5>Summary:</h5>
+    <p [innerHTML]="recette.summary"></p>
+    
+  <h5>Details:</h5>
+  <ul>
+    <li><strong>Cuisine:</strong> {{ recette.cuisines.join(', ') }}</li>
+    <li><strong>Health Score:</strong> {{ recette.healthScore }}</li>
+    <!-- Ajoutez d'autres détails selon vos besoins -->
+  </ul>
+      <h5>Ingredients:</h5>
+      <ul>
+        <li *ngFor="let ingredient of recette.extendedIngredients">{{ ingredient.name }}</li>
+      </ul>
+      <h5>Instructions:</h5>
+      <div *ngFor="let instruction of recette.analyzedInstructions[0]?.steps">
+        {{ instruction.step }}
+      </div>
+</div>
+</div>
+  <a (click)="goToListRecettes()"  class="back-link" style="margin-left: 30px;">Retour</a>
+  <a *ngIf="afficher" class="back-link" (click)="addToFavorites(recette)"  style="margin-left: 10px;">Ajouter au Favoris</a>
+
+<div class="no-Recette" *ngIf="!recette">
+  <h3>Ce Recette n'existe pas</h3>
+</div>
+<div style="margin-left: 26px;">
+  <h5 class="comment-title">Commentaires</h5>
+
+  <div class="comment-section" *ngFor="let commentaire of dataGetComment">
+    <div class="comment">
+      <p class="author">{{commentaire.profile.prenom +' '+ commentaire.profile.nom }}</p>
+      <p class="content">{{commentaire.contenu}}</p>
+    </div>
+  </div>
+  
+  <textarea *ngIf="afficher" [(ngModel)]="nouveauCommentaire" name="nouveauCommentaire" placeholder="Saisissez votre commentaire..." class="comment-input"></textarea>
+  <button (click)="addComment()" *ngIf="afficher" type="button" class="comment-button">Ajouter</button>
+  
+</div>
+
+
+  

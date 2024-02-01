@@ -1,0 +1,31 @@
+
+<nav>
+  <div class="nav-wrapper " style="background-color: #ff771d;">
+      <a href="#" class="brand-logo center">
+        ChefEnPoche
+      </a> 
+
+  </div>
+</nav>
+<h4 *ngIf="affiche3" style="color: #ff771d; margin-left: 470px;">Vous êtes inscrit avec succés</h4>
+<form (ngSubmit)="onSubmit()" style="margin-top: 40px;" #form="ngForm">
+  <a href="#" style="color: rgb(255, 106, 0);">retour</a>
+  <div *ngIf="affiche1" style="color:red">{{message1}}</div>
+  <label for="nom">Nom :</label>
+  <input [(ngModel)]="nom" name="nom"  required>
+  <div *ngIf="affiche1" style="color:red">{{message1}}</div>
+  <label for="prenom">Prénom :</label>
+  <input  [(ngModel)]="prenom"  name="prenom" required>
+  <div *ngIf="affiche1" style="color:red">{{message1}}</div>
+  <div *ngIf="affiche2" style="color:red">{{message2}}</div>
+  <label for="email">Email :</label>
+  <input [(ngModel)]="email" name="email"  required>
+  <div *ngIf="affiche1" style="color:red">{{message1}}</div>
+  <label for="motDePasse">Mot de passe :</label>
+  <input  [(ngModel)]="motDePasse" type="password" name="motDePasse" required>
+
+  <button type="submit">Envoyer</button><br>
+ Vous avez un compte?  <a (click)="connecter()" style="color: #ff771d;">Se connecter</a>
+</form>
+
+

@@ -1,5 +1,5 @@
 {
-  "name": "movies-list",
+  "name": "Recettes-list",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:movies-list": "node dist/movies-list/server/server.mjs"
+    "serve:ssr:Recettes-list": "node dist/Recettes-list/server/server.mjs"
   },
   "private": true,
   "dependencies": {
@@ -23,6 +23,7 @@
     "@angular/ssr": "^17.0.3",
     "express": "^4.18.2",
     "materialize-css": "^1.0.0",
+    "node-df": "^0.1.4",
     "rxjs": "~7.8.0",
     "rxjs-compat": "^6.6.7",
     "tslib": "^2.3.0",

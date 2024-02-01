@@ -1,0 +1,9 @@
+export class RecetteData {
+  results: any[]; // Mettez le type correct ici
+  // Ajoutez d'autres propriétés si nécessaire
+  
+constructor( results : any){
+  this.results=results;
+  
+}
+}

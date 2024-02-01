@@ -1,0 +1,59 @@
+.Recette-container {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-right: 40px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  .back-link {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #ff5e00;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-top: 10px;
+  }
+  img{
+    height:300px;
+    width:202px;
+  }
+  
+  .Recette-container:hover {
+    transform: scale(1.05);
+  }
+  
+  .Recette-image {
+    
+    border-bottom: 1px solid #ddd;
+    display: block; /* Pour supprimer l'espace sous l'image */
+  }
+  
+  .Recette-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .Recette-container:hover .Recette-overlay {
+    opacity: 1;
+  }
+  
+  .Recette-overlay h3 {
+    margin: 0;
+  }
+  
