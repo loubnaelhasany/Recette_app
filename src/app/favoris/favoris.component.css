@@ -82,5 +82,20 @@ nav {
     margin-top: 5px;
     font-weight: bold;
   }
+  .Supprimer-button2 {
+    background-color: #ff771d; /* Couleur de fond orange-rouge */
+    color: #fff; /* Couleur du texte en blanc */
+    padding: 10px 15px; /* Espacement intérieur du bouton */
+    border: none; /* Supprime la bordure du bouton */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Change le curseur lors du survol du bouton */
+    transition: background-color 0.3s ease; /* Effet de transition sur la couleur de fond */
+  }
+  
+  .Supprimer-button2:hover {
+    background-color: #f8a167; /* Couleur de fond orange-rouge légèrement plus foncée au survol */
+  }
+  
+  
   
   

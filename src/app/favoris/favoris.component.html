@@ -10,14 +10,13 @@
   </nav>
 <div style="display: flex; flex-wrap: wrap; margin-right:0px;">
 @for ( recette of recettes; track $index) {
-<div  class="Recette-container" (click)="goToDetail(recette)">
+<div  class="Recette-container" >
     <div class="Recette-card">
-      <img [src]="recette.image" alt="{{ recette.title }}" class="Recette-image">
+      <img [src]="recette.image" alt="{{ recette.title }}" class="Recette-image" (click)="goToDetail(recette)">
       <div class="Recette-overlay">
         <p>{{recette.title }}</p>
+        <button class="Supprimer-button2" (click)="supprimer(recette)">Supprimer</button>
       </div>
     </div>
 </div>
-<button (click)="supprimer(recette.id)">Supprimer</button>
 }
-</div>

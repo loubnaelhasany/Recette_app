@@ -15,7 +15,7 @@ export class RecetteService {
     throw new Error('Method not implemented.');
   }
 
-  private API_TOKEN: string = 'aa3b3284febd4e2180ac2b9b160bb7d2';
+  private API_TOKEN: string = '2f6ca86ca4d044e7aca38776267c3948';
   private baseUrl: string = 'https://api.spoonacular.com/';
 
 
@@ -39,7 +39,7 @@ export class RecetteService {
   
   }
 
-  private apiUrl = 'http://localhost:8080/Recette';
+  private apiUrl = 'http://localhost:8080/Film';
   addRecetteToFavorites(Recette: any): Observable<any> {
     const url = `${this.apiUrl}`;
     const headers = { 'Content-Type': 'application/json' };
@@ -78,8 +78,8 @@ export class RecetteService {
     return this.http.get(url);
 
   }
-  deleteRecette(id:number):Observable<any>{
-    const url =`${this.apiUrl}/${id}` ;
+  deleteRecette(id:number, userId:number):Observable<any>{
+    const url =`${this.apiUrl}/${id}/${userId}` ;
     return this.http.delete(url);
   }
 }

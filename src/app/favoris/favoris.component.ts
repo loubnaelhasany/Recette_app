@@ -59,10 +59,11 @@ export class FavorisComponent implements OnInit {
   goToDetail(Recette:any) {
     this.router.navigate(['/Recette',Recette.id]);
 } 
-supprimer(id:number){
-        this.service.deleteRecette(id).subscribe((data:any)=>{
-          console.log("est supprimer",data);
-        })
+supprimer(Recette:any){
+  console.log(Recette);
+  this.service.deleteRecette(Recette.id,this.id_user).subscribe((data:any)=>{
+    console.log("est supprimer",data);
+  })
 } 
 
 }
