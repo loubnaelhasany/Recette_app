@@ -9,11 +9,11 @@ import java.util.List;
 @RequestMapping("Favoris")
 @CrossOrigin(origins = "*")
 public class FavorisController {
-    private final FavorisService filmService;
+    private final FavorisService favorisService;
 
  @Autowired
-    public FavorisController(FavorisService filmService) {
-        this.filmService = filmService;
+    public FavorisController(FavorisService favorisService) {
+        this.favorisService = favorisService;
     }
 
 
@@ -22,7 +22,7 @@ public class FavorisController {
         System.out.println("Film reçu depuis Angular : " +"id"+"idfdav" +film.getIfFav());
 
         try {
-            this.filmService.resNewFilm(film);
+            this.favorisService.resNewFilm(film);
 
         } catch (Exception e) {
             System.out.println("echoue");
@@ -30,10 +30,10 @@ public class FavorisController {
     }
     @GetMapping("/{user_id}")
     public List<Favoris> getFavoris(@PathVariable Long user_id){
-      return this.filmService.getFavoris(user_id);
+      return this.favorisService.getFavoris(user_id);
     }
     @DeleteMapping("/{id}/{userId}")
     public void  deleteRecette(@PathVariable long id, @PathVariable long userId){
-        this.filmService.deleteRecette(id, userId);
+        this.favorisService.deleteRecette(id, userId);
     }
 }

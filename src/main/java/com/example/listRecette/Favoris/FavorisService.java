@@ -8,21 +8,21 @@ import java.util.List;
 
 @Service
 public class FavorisService {
-    private final FavorisRepository filmRepository;
+    private final FavorisRepository favorisRepository;
 @Autowired
     public FavorisService(FavorisRepository filmRepository) {
-        this.filmRepository = filmRepository;
+        this.favorisRepository = filmRepository;
     }
     public void resNewFilm(Favoris film) {
-          this.filmRepository.save(film);
+          this.favorisRepository.save(film);
     }
 
 
     public List<Favoris> getFavoris(Long userId) {
-        return  this.filmRepository.findByUserId(userId);
+        return  this.favorisRepository.findByUserId(userId);
     }
     @Transactional
     public void deleteRecette(long id ,long userId) {
-       this.filmRepository.deleteByIdAndUserId(id,userId);
+       this.favorisRepository.deleteByIdAndUserId(id,userId);
     }
 }
