@@ -39,7 +39,7 @@ export class RecetteService {
   
   }
 
-  private apiUrl = 'http://localhost:8080/Film';
+  private apiUrl = 'http://localhost:8080/Favoris';
   addRecetteToFavorites(Recette: any): Observable<any> {
     const url = `${this.apiUrl}`;
     const headers = { 'Content-Type': 'application/json' };
