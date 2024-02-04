@@ -1,4 +1,4 @@
-package com.example.listfilm.Profile;
+package com.example.listRecette.Profile;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

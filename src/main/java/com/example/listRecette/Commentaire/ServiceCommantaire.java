@@ -1,4 +1,4 @@
-package com.example.listfilm.Commentaire;
+package com.example.listRecette.Commentaire;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

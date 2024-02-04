@@ -1,10 +1,9 @@
-package com.example.listfilm.Profile;
+package com.example.listRecette.Profile;
 
-import com.example.listfilm.Commentaire.Commantaire;
-import com.example.listfilm.Film.Film;
+import com.example.listRecette.Commentaire.Commantaire;
+import com.example.listRecette.Favoris.Favoris;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 
 import java.util.ArrayList;
@@ -28,7 +27,7 @@ public class Profile {
     @OneToMany(mappedBy = "profile")
    private List<Commantaire> comments= new ArrayList<>();
     @OneToMany(mappedBy = "user")
-   private List<Film> films = new ArrayList<>();
+   private List<Favoris> films = new ArrayList<>();
 
 
 

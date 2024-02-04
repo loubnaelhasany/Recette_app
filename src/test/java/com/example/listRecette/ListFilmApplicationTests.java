@@ -1,4 +1,4 @@
-package com.example.listfilm;
+package com.example.listRecette;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

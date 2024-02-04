@@ -1,13 +1,7 @@
-package com.example.listfilm.Film;
+package com.example.listRecette.Favoris;
 
-import com.example.listfilm.Commentaire.Commantaire;
-import com.example.listfilm.Profile.Profile;
-import com.fasterxml.jackson.annotation.JsonProperty;
+import com.example.listRecette.Profile.Profile;
 import jakarta.persistence.*;
-
-
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 @Table(
@@ -15,7 +9,7 @@ import java.util.List;
                 @UniqueConstraint(columnNames = {"id","user"})
         }
 )
-public class Film {
+public class Favoris {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long ifFav;
@@ -25,10 +19,10 @@ public class Film {
    @ManyToOne
    Profile user;
 
-    public Film() {
+    public Favoris() {
     }
 
-    public Film(long id, Profile user) {
+    public Favoris(long id, Profile user) {
         this.id = id;
         this.user = user;
     }

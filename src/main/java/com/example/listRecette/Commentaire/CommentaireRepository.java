@@ -1,4 +1,4 @@
-package com.example.listfilm.Commentaire;
+package com.example.listRecette.Commentaire;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

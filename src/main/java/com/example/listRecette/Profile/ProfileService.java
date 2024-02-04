@@ -1,4 +1,4 @@
-package com.example.listfilm.Profile;
+package com.example.listRecette.Profile;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,11 +1,8 @@
-package com.example.listfilm.Commentaire;
+package com.example.listRecette.Commentaire;
 
-import com.example.listfilm.Film.Film;
-import com.example.listfilm.Profile.Profile;
-import com.fasterxml.jackson.annotation.JsonProperty;
+import com.example.listRecette.Profile.Profile;
 import jakarta.persistence.*;
 
-import java.util.Date;
 @Entity
 @Table
 public class Commantaire {
