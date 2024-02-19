@@ -1,12 +1,12 @@
 <nav>
    <div class="nav-wrapper">
      <div class="left-content">
-       <h6 *ngIf="afficher" style="font-weight: bold; ">Bienvenue   {{nom +' '+ prenom}}</h6>
-       <button *ngIf="!afficher" (click)="inscrire()" type="button"> Se connecter</button>
+       <h6 *ngIf="afficher" style="font-weight: bold; ">Welcome   {{nom +' '+ prenom}}</h6>
+       <button *ngIf="!afficher" (click)="inscrire()" type="button"> Sign in</button>
      </div>
-     <a href="#" class="brand-logo center">ChefEnPoche</a>
+     <a href="#" class="brand-logo center">ChefInYourPocket</a>
      <div class="right-content">
-       <a *ngIf="afficher" (click)="goFavoris()">Mes Favoris</a>
+       <a *ngIf="afficher" (click)="goFavoris()">My favorites</a>
        <button *ngIf="afficher" (click)="this.service2.logOut()">Logout</button>
      </div>
    </div>
